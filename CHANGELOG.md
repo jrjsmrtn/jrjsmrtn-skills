@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Community health files: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`.
 
+## [0.1.8]
+
+### Changed
+
+- Refreshed `project-orchestration-skills` to `aac7c9f` (v0.1.18): G4 review polish — `wrapup-sprint` now references the boundary ADR by its real title ("Work-Organization Boundary"). Marketplace `version` 0.1.7 → 0.1.8.
+
 ## [0.1.7]
 
 ### Changed
@@ -35,4 +41,4 @@ Releases prior to this changelog are recorded in the repository's git history.
 Run `git tag --sort=-creatordate` to list released versions and
 `git log <previous-tag>..<tag>` to see what changed in each.
 
-The current version is `0.1.7` (see `.claude-plugin/marketplace.json`).
+The current version is `0.1.8` (see `.claude-plugin/marketplace.json`).
