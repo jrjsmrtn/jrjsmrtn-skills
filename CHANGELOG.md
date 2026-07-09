@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Community health files: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`.
 
+## [0.1.10]
+
+### Changed
+
+- Repinned all four plugins to their CHANGELOG-backfill HEADs so each pinned tree contains its own release history — `project-orchestration-skills` `740cfa9`, `c4-skills` `3920736`, `diataxis-skills` `2c6893e`, `obsidian-skills` `03218f8`. No plugin-version change (docs-only). Marketplace `version` 0.1.9 → 0.1.10.
+
 ## [0.1.9]
 
 ### Changed
@@ -47,4 +53,4 @@ Releases prior to this changelog are recorded in the repository's git history.
 Run `git tag --sort=-creatordate` to list released versions and
 `git log <previous-tag>..<tag>` to see what changed in each.
 
-The current version is `0.1.9` (see `.claude-plugin/marketplace.json`).
+The current version is `0.1.10` (see `.claude-plugin/marketplace.json`).
