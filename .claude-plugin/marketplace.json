@@ -1,6 +1,6 @@
 {
   "name": "jrjsmrtn-skills",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "owner": {
     "name": "Georges Martin",
     "email": "jrjsmrtn@gmail.com"
@@ -42,7 +42,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/jrjsmrtn/project-orchestration-skills.git",
-        "sha": "2098a7653d1ec7036b4a95a194a684abe572faa6"
+        "sha": "00253f97bfa78614f735da85c9950afe85134298"
       },
       "homepage": "https://github.com/jrjsmrtn/project-orchestration-skills"
     }

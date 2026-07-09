@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Community health files: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`.
 
+## [0.1.7]
+
+### Changed
+
+- Refreshed `project-orchestration-skills` to `00253f9` (v0.1.17): G4 tracker-boundary single-source-of-truth in `wrapup-sprint` + `bootstrap-project` (roadmap-vs-public-tracker canonical status). Marketplace `version` 0.1.6 → 0.1.7.
+
 ## [0.1.6]
 
 ### Changed
@@ -29,4 +35,4 @@ Releases prior to this changelog are recorded in the repository's git history.
 Run `git tag --sort=-creatordate` to list released versions and
 `git log <previous-tag>..<tag>` to see what changed in each.
 
-The current version is `0.1.6` (see `.claude-plugin/marketplace.json`).
+The current version is `0.1.7` (see `.claude-plugin/marketplace.json`).
