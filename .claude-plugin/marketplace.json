@@ -1,6 +1,6 @@
 {
   "name": "jrjsmrtn-skills",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "owner": {
     "name": "Georges Martin",
     "email": "jrjsmrtn@gmail.com"
@@ -12,17 +12,17 @@
       "source": {
         "source": "url",
         "url": "https://github.com/jrjsmrtn/c4-skills.git",
-        "sha": "78a094fb243c3dcf3b9136c9fb8269656ce36171"
+        "sha": "aeaa20ce0632093ef8592656be8450e26375ee23"
       },
       "homepage": "https://github.com/jrjsmrtn/c4-skills"
     },
     {
       "name": "diataxis-skills",
-      "description": "Skills for applying the Diataxis documentation framework — audit, create, convert, and plan documentation organized around four user needs.",
+      "description": "Skills for applying the Diátaxis documentation framework — audit, create, convert, and plan documentation organized around four user needs.",
       "source": {
         "source": "url",
         "url": "https://github.com/jrjsmrtn/diataxis-skills.git",
-        "sha": "155e6559f92893021a82cf0d671334cadd289b59"
+        "sha": "5d956040a65190060ab674c94b01ba3d2f051161"
       },
       "homepage": "https://github.com/jrjsmrtn/diataxis-skills"
     },
@@ -32,7 +32,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/jrjsmrtn/obsidian-skills.git",
-        "sha": "23b64327b6bbd08bbe9362ae33af37b0221118c7"
+        "sha": "2d67ef078e7f21d67fad9a84e839a596a09331ec"
       },
       "homepage": "https://github.com/jrjsmrtn/obsidian-skills"
     },
@@ -42,7 +42,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/jrjsmrtn/project-orchestration-skills.git",
-        "sha": "aac7c9f2e376e8b59158c63ecc4a5e74edbf1759"
+        "sha": "53c4d73ccea016f4cb16782aaea601b8394f2ebb"
       },
       "homepage": "https://github.com/jrjsmrtn/project-orchestration-skills"
     }

@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Community health files: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`.
 
+## [0.1.9]
+
+### Changed
+
+- Portfolio-review quality pass: refreshed all four plugins to their reviewed releases — `project-orchestration-skills` `53c4d73` (v0.1.19), `c4-skills` `aeaa20c` (v0.1.6), `diataxis-skills` `5d95604` (v0.1.4), `obsidian-skills` `2d67ef0` (v0.1.5). Fixes across 26 skills: broken pattern links → absolute URLs, Structurizr `-workspace`→`-w` + mount-root, `mix deps.audit` for Elixir CVEs, Diátaxis accent, and portability polish. Marketplace `version` 0.1.8 → 0.1.9; also accented "Diátaxis" in the marketplace card.
+
 ## [0.1.8]
 
 ### Changed
@@ -41,4 +47,4 @@ Releases prior to this changelog are recorded in the repository's git history.
 Run `git tag --sort=-creatordate` to list released versions and
 `git log <previous-tag>..<tag>` to see what changed in each.
 
-The current version is `0.1.8` (see `.claude-plugin/marketplace.json`).
+The current version is `0.1.9` (see `.claude-plugin/marketplace.json`).
