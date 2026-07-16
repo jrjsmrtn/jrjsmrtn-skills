@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Community health files: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`.
 
+## [0.1.15]
+
+### Changed
+
+- Refreshed `project-orchestration-skills` to `b7fa192` (v0.1.24): `harden-gitlab-ci` review-gate fixes. Most notably a **security gap** — the skill asserted `CI_JOB_TOKEN`'s own-project-only default without checking that it still holds; a project set to "All groups and projects" lets jobs from any project reach in, and has no allowlist to audit. Confirming the access mode is now the first step of that phase. The `audit` scope also gained tested detection commands (it had none, making it advisory rather than actionable). Marketplace `version` 0.1.14 → 0.1.15.
+
 ## [0.1.14]
 
 ### Changed
@@ -78,4 +84,4 @@ Releases prior to this changelog are recorded in the repository's git history.
 Run `git tag --sort=-creatordate` to list released versions and
 `git log <previous-tag>..<tag>` to see what changed in each.
 
-The current version is `0.1.14` (see `.claude-plugin/marketplace.json`).
+The current version is `0.1.15` (see `.claude-plugin/marketplace.json`).
