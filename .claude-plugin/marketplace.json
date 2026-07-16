@@ -1,6 +1,6 @@
 {
   "name": "jrjsmrtn-skills",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "owner": {
     "name": "Georges Martin",
     "email": "jrjsmrtn@gmail.com"
@@ -38,11 +38,11 @@
     },
     {
       "name": "project-orchestration-skills",
-      "description": "Skills for AI-assisted project orchestration following best practices for software development lifecycle, architecture documentation, and quality automation",
+      "description": "Skills for AI-assisted project orchestration following best practices for software development lifecycle, architecture documentation, work organization, and quality automation",
       "source": {
         "source": "url",
         "url": "https://github.com/jrjsmrtn/project-orchestration-skills.git",
-        "sha": "c0c34de288e6f02a7828fec77f8c1fbeff5b7d1b"
+        "sha": "5cf6a1c560a836377d4cdb225087851437da65a3"
       },
       "homepage": "https://github.com/jrjsmrtn/project-orchestration-skills"
     }
