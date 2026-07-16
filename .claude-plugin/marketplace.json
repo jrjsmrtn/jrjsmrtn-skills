@@ -1,6 +1,6 @@
 {
   "name": "jrjsmrtn-skills",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "owner": {
     "name": "Georges Martin",
     "email": "jrjsmrtn@gmail.com"
@@ -12,7 +12,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/jrjsmrtn/c4-skills.git",
-        "sha": "39207363fb95f3ff84c4016dff84885ccbea151f"
+        "sha": "dfb65aa672dceaf609980c32619358742de8e664"
       },
       "homepage": "https://github.com/jrjsmrtn/c4-skills"
     },
@@ -42,7 +42,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/jrjsmrtn/project-orchestration-skills.git",
-        "sha": "740cfa9761f5eea4f629fe5f41e72449c8de80b0"
+        "sha": "c0c34de288e6f02a7828fec77f8c1fbeff5b7d1b"
       },
       "homepage": "https://github.com/jrjsmrtn/project-orchestration-skills"
     }

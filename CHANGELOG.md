@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Community health files: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`.
 
+## [0.1.11]
+
+### Changed
+
+- Refreshed the two plugins carrying the **OCI-compliant-first** pass — `project-orchestration-skills` `c0c34de` (v0.1.20: `setup-container-security` reframed to OCI-first; `setup-architecture-as-code` Structurizr `-severity` → `-s`) and `c4-skills` `dfb65aa` (v0.1.7: documented the `inspect` subcommand; normalised the severity flag). `diataxis-skills` and `obsidian-skills` unchanged. Marketplace `version` 0.1.10 → 0.1.11.
+
 ## [0.1.10]
 
 ### Changed
@@ -53,4 +59,4 @@ Releases prior to this changelog are recorded in the repository's git history.
 Run `git tag --sort=-creatordate` to list released versions and
 `git log <previous-tag>..<tag>` to see what changed in each.
 
-The current version is `0.1.10` (see `.claude-plugin/marketplace.json`).
+The current version is `0.1.11` (see `.claude-plugin/marketplace.json`).
