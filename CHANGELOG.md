@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Community health files: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`.
 
+## [0.1.16]
+
+### Changed
+
+- Refreshed `project-orchestration-skills` to `7e8c86b` (v0.1.25): `graduate-backlog` review-gate fixes. Most consequential: its `priority: *` label **colours** disagreed with the shared taxonomy, and each collided with a *different* label in it — and because label creation is idempotent-by-`|| true`, **first writer wins**, so the divergence would have been permanent and silent. Also fixed: Phase 5 created labels *after* the command that applies them (first run would fail); an eligibility clause still consulted the "Public" profile the skill had just decoupled from; `full` scope omitted the phase producing its headline output; and `roadmap-visible` was advertised but never implemented. Marketplace `version` 0.1.15 → 0.1.16.
+
 ## [0.1.15]
 
 ### Changed
@@ -84,4 +90,4 @@ Releases prior to this changelog are recorded in the repository's git history.
 Run `git tag --sort=-creatordate` to list released versions and
 `git log <previous-tag>..<tag>` to see what changed in each.
 
-The current version is `0.1.15` (see `.claude-plugin/marketplace.json`).
+The current version is `0.1.16` (see `.claude-plugin/marketplace.json`).
