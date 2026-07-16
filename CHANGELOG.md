@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Community health files: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`.
 
+## [0.1.14]
+
+### Changed
+
+- Refreshed `project-orchestration-skills` to `b011194` (v0.1.23): adds **`harden-gitlab-ci`** (11 → 12 skills) — GitLab CI/CD supply-chain hardening (SHA-pinned `include:`/CI-Catalog components, `CI_JOB_TOKEN` allowlist scoping, masked+protected variables, `id_tokens`/OIDC, digest-pinned job images), for gitlab.com and self-hosted alike. A sibling of `harden-github-actions`, not a translation: GitLab's risks differ in kind. Also corrects a false claim in `harden-github-actions` that GitLab has no marketplace-action supply chain — GitLab's CI/CD Catalog needs the same SHA-pinning discipline. Marketplace `version` 0.1.13 → 0.1.14.
+
 ## [0.1.13]
 
 ### Changed
@@ -72,4 +78,4 @@ Releases prior to this changelog are recorded in the repository's git history.
 Run `git tag --sort=-creatordate` to list released versions and
 `git log <previous-tag>..<tag>` to see what changed in each.
 
-The current version is `0.1.13` (see `.claude-plugin/marketplace.json`).
+The current version is `0.1.14` (see `.claude-plugin/marketplace.json`).
