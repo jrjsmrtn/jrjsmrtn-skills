@@ -90,4 +90,4 @@ Releases prior to this changelog are recorded in the repository's git history.
 Run `git tag --sort=-creatordate` to list released versions and
 `git log <previous-tag>..<tag>` to see what changed in each.
 
-The current version is `0.1.16` (see `.claude-plugin/marketplace.json`).
+The current version is `0.1.17` (see `.claude-plugin/marketplace.json`).
