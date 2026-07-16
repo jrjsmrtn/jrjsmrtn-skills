@@ -11,6 +11,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Community health files: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`.
 
+## [0.1.13]
+
+### Changed
+
+- Refreshed `project-orchestration-skills` to `dc13d10` (v0.1.22): **renames `harden-ci-workflows` → `harden-github-actions`**, owning the skill's GitHub coupling rather than hiding it inside a plugin that is otherwise forge-agnostic. Its controls are properties of the GitHub Actions execution model, not portable concepts in GitHub syntax; GitLab CI / Forgejo Actions are explicitly out of scope and tracked separately. Marketplace `version` 0.1.12 → 0.1.13.
+- **Breaking for consumers**: the invocation name changes to `/harden-github-actions`. The old name is not aliased — update scripts and docs that reference it.
+
 ## [0.1.12]
 
 ### Changed
@@ -65,4 +72,4 @@ Releases prior to this changelog are recorded in the repository's git history.
 Run `git tag --sort=-creatordate` to list released versions and
 `git log <previous-tag>..<tag>` to see what changed in each.
 
-The current version is `0.1.12` (see `.claude-plugin/marketplace.json`).
+The current version is `0.1.13` (see `.claude-plugin/marketplace.json`).

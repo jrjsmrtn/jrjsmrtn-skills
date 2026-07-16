@@ -39,7 +39,7 @@ gh skill install jrjsmrtn/<plugin> --dir ~/.vibe/skills
 | [c4-skills](https://github.com/jrjsmrtn/c4-skills)                                       | c4-model, c4-review, structurizr-dsl, c4-deployment                                                                                               | C4 architecture modeling and Structurizr DSL |
 | [diataxis-skills](https://github.com/jrjsmrtn/diataxis-skills)                           | diataxis-audit, diataxis-create, diataxis-convert, diataxis-plan                                                                                  | Diátaxis documentation framework             |
 | [obsidian-skills](https://github.com/jrjsmrtn/obsidian-skills)                           | obsidian-cli                                                                                                                                      | Obsidian vault interaction via CLI           |
-| [project-orchestration-skills](https://github.com/jrjsmrtn/project-orchestration-skills) | analyze-project, bootstrap-project, setup-adrs, setup-architecture-as-code, setup-pre-commit, setup-container-security, harden-ci-workflows, validate-quality-config, plan-sprint, wrapup-sprint | AI-assisted project orchestration            |
+| [project-orchestration-skills](https://github.com/jrjsmrtn/project-orchestration-skills) | analyze-project, bootstrap-project, setup-adrs, setup-architecture-as-code, setup-pre-commit, setup-container-security, harden-github-actions, validate-quality-config, plan-sprint, wrapup-sprint | AI-assisted project orchestration            |
 
 ## License
 
