@@ -11,6 +11,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Community health files: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`.
 
+## [0.1.18]
+
+### Changed
+
+- Refreshed `project-orchestration-skills` to `8312af7` (v0.1.26): toolchain floor vs build version
+  becomes a quality gate. `setup-pre-commit`'s `quality-configuration.md` template now records three
+  distinct roles — **Floor** (oldest runtime a consumer needs, from the language manifest), **Build**
+  (what CI actually builds with), **Inherited** (a floor a dependency forces on you) — plus the
+  per-call-site intent for every place CI selects a version. `validate-quality-config` gains a Step 6
+  that asserts floor and build version *differ*; every other check in that skill asserts agreement,
+  which is why this one was missing. Drawn from a real failure where lowering a Go floor silently
+  moved every build onto it, shipping binaries built against a stdlib with two known advisories.
+  Marketplace `version` 0.1.17 → 0.1.18.
+
 ## [0.1.16]
 
 ### Changed
