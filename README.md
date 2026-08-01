@@ -43,4 +43,4 @@ gh skill install jrjsmrtn/<plugin> --dir ~/.vibe/skills
 
 ## License
 
-MIT
+[MIT](LICENSE)
