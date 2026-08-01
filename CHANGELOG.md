@@ -11,6 +11,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Community health files: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `LICENSE` (MIT).
 
+## [0.1.19]
+
+### Changed
+
+- Refreshed `project-orchestration-skills` to `51567c8` (v0.1.27): **workspace Sprint 1 — Release &
+  CI-Publishing Integrity**. Five defects in the release/CI-publishing path, all found by *exercising*
+  a real release (`ansible-bom`) rather than reading the skills, and each fix verified against the
+  installed tool (cosign 3.1.1, syft 1.36.0) or vendor docs. `wrapup-sprint` now verifies every
+  signature/attestation back in the release run as a gate (not just a consumer guide) and documents
+  the cosign v3 bundle form; states release-job ordering so `slsa-github-generator` can't win the race
+  and ship a bare notesless release; and requires the SBOM to catalogue the built **artifact** (not the
+  source tree, which yields `pkg:github/*` and no stdlib) with a runnable CI subject assertion.
+  `harden-github-actions` gains a private-repository control matrix (Scorecard/dependency-review/keyless
+  signing self-activating at the public gate via `if: !repository.private`) and a note that Scorecard
+  grades the default branch — which gitflow makes `develop`. Marketplace `version` 0.1.18 → 0.1.19.
+
 ## [0.1.18]
 
 ### Changed
