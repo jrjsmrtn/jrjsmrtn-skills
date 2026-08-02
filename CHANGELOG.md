@@ -11,6 +11,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Community health files: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `LICENSE` (MIT).
 
+## [0.1.20]
+
+### Changed
+
+- Refreshed `project-orchestration-skills` to `12e6c72` (v0.1.28): **workspace Sprint 2 — Inception &
+  Establishment**. `analyze-project` now models what an upstream project requires **of a contributor**
+  (DCO vs CLA, AI-contribution policy, inbound licence compatibility, governance) — a Phase 3 *Upstream
+  Acceptance* subsection and a Phase 5 gap category, distinct from the dependencies you consume. Drawn
+  from a real case where a contribution's acceptance criteria were discovered only after the code was
+  written. (Sprint 2 also shipped a new **private** `workspace-skills` plugin via the incubator
+  marketplace; it is not part of this public marketplace.) Marketplace `version` 0.1.19 → 0.1.20.
+
 ## [0.1.19]
 
 ### Changed
