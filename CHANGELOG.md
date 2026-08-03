@@ -11,6 +11,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Community health files: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `LICENSE` (MIT).
 
+## [0.1.22]
+
+### Changed
+
+- Refreshed `c4-skills` to `dd47755` (v0.1.8), `diataxis-skills` to `e1e15d8` (v0.1.5) and
+  `obsidian-skills` to `b2ba28c` (v0.1.6): all three **adopt `lefthook` for committed, reproducible
+  git hooks**. The `gitleaks` gate previously lived only in `.git/hooks/pre-commit`, which git does
+  not track — it did not survive a fresh clone, on repos whose purpose includes keeping homelab
+  details out of public GitHub. `lefthook.yml` is committed, so `lefthook install` reproduces the
+  gates anywhere. Each also gains `claude plugin validate`, verified complementary to the meta-repo's
+  consistency gate with zero overlap. Both checks fail open when their tool is absent, so a missing
+  local tool cannot block an external contribution.
+
+  No skill content changed in any of the three — these are tooling-only releases.
+  Marketplace `version` 0.1.21 → 0.1.22.
+
 ## [0.1.21]
 
 ### Changed

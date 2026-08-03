@@ -1,7 +1,7 @@
 {
   "name": "jrjsmrtn-skills",
   "description": "Georges Martin's Claude Code skill plugins: AI-assisted project orchestration, C4 architecture modelling, Di\u00e1taxis documentation, and Obsidian vault interaction.",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "owner": {
     "name": "Georges Martin",
     "email": "jrjsmrtn@gmail.com"
@@ -13,7 +13,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/jrjsmrtn/c4-skills.git",
-        "sha": "dfb65aa672dceaf609980c32619358742de8e664"
+        "sha": "dd4775540102c73a4790b4f0f9d50617cb097e95"
       },
       "homepage": "https://github.com/jrjsmrtn/c4-skills"
     },
@@ -23,7 +23,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/jrjsmrtn/diataxis-skills.git",
-        "sha": "2c6893ebe76b950fafe8ea3b91d2597374930570"
+        "sha": "e1e15d8e356f768359d9e7088b005e48c26ea6b8"
       },
       "homepage": "https://github.com/jrjsmrtn/diataxis-skills"
     },
@@ -33,7 +33,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/jrjsmrtn/obsidian-skills.git",
-        "sha": "03218f8ca25204bf8a98a89c36cfde3cc3ccdff2"
+        "sha": "b2ba28cd0e6746af32db55b47ccff0520170d29e"
       },
       "homepage": "https://github.com/jrjsmrtn/obsidian-skills"
     },
