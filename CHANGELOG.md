@@ -11,6 +11,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Community health files: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `LICENSE` (MIT).
 
+## [0.1.21]
+
+### Changed
+
+- Refreshed `project-orchestration-skills` to `9c61807` (v0.1.29): **`setup-pre-commit` renamed to
+  `setup-git-hooks` — BREAKING**. Invoke the new name. The old one was wrong on two axes at once: it
+  named one of the *two stages* the skill configures (pre-commit and pre-push, the latter carrying the
+  expensive checks), and one of the *two hook managers* it already documents (`pre-commit` and
+  `lefthook`) — while roughly half the skill, covering `.editorconfig`, secret-detection architecture,
+  `.gitignore` hardening and multi-remote protection, involves no hook manager at all. The practical
+  effect was that maintainers on Elixir, Go or Rust projects read "pre-commit", correctly inferred
+  "that is the Python hook framework", and never reached the rest.
+
+  **A deprecation stub remains at the old name until 0.2.0** — the skill, plugin and marketplace
+  formats provide no rename, alias or redirect field, so content-level deprecation is the only
+  graceful path the format offers. Splitting into `setup-pre-commit` + `setup-lefthook` was considered
+  and rejected: it would duplicate ~340 lines of manager-neutral content. See workspace ADR-0013.
+  Marketplace `version` 0.1.20 → 0.1.21.
+
 ## [0.1.20]
 
 ### Changed
