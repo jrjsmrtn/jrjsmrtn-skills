@@ -46,6 +46,16 @@
         "sha": "9c61807763f48854bf109ad5fb998548ac25dcb1"
       },
       "homepage": "https://github.com/jrjsmrtn/project-orchestration-skills"
+    },
+    {
+      "name": "okf-skills",
+      "description": "Skills for authoring and maintaining Open Knowledge Format bundles \u2014 scaffold a conformant bundle, write a concept whose claims are attributable, and run the re-verification cycle that keeps them true. Private, incubating.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/jrjsmrtn/okf-skills.git",
+        "sha": "fef98ede9e9822709be838ca0ffd8c5cf2a04a1a"
+      },
+      "homepage": "https://github.com/jrjsmrtn/okf-skills"
     }
   ]
 }
