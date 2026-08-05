@@ -56,6 +56,16 @@
         "sha": "fef98ede9e9822709be838ca0ffd8c5cf2a04a1a"
       },
       "homepage": "https://github.com/jrjsmrtn/okf-skills"
+    },
+    {
+      "name": "structured-data-skills",
+      "description": "Query and safely edit structured files \u2014 JSON, YAML, Markdown, SQLite \u2014 and extract text from documents including scanned PDFs, using format-aware tools instead of line-based ones",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/jrjsmrtn/structured-data-skills.git",
+        "sha": "0243ecdff71d5ca2e87f472b988b3fdcbdbdfba4"
+      },
+      "homepage": "https://github.com/jrjsmrtn/structured-data-skills"
     }
   ]
 }
