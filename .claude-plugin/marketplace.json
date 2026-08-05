@@ -49,11 +49,11 @@
     },
     {
       "name": "okf-skills",
-      "description": "Skills for authoring and maintaining Open Knowledge Format bundles \u2014 scaffold a conformant bundle, write a concept whose claims are attributable, and run the re-verification cycle that keeps them true. Private, incubating.",
+      "description": "Skills for authoring and maintaining Open Knowledge Format bundles \u2014 scaffold a conformant bundle, write a concept whose claims are attributable, and run the re-verification cycle that keeps them true.",
       "source": {
         "source": "url",
         "url": "https://github.com/jrjsmrtn/okf-skills.git",
-        "sha": "fef98ede9e9822709be838ca0ffd8c5cf2a04a1a"
+        "sha": "bb6388f85eeb61d0b08107ed670685a35ed1dec0"
       },
       "homepage": "https://github.com/jrjsmrtn/okf-skills"
     },
