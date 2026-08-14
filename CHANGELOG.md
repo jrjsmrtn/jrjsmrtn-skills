@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.25]
+
+### Changed
+
+- Refreshed `okf-skills` to `f585b26` (v0.1.9): **`okf-verify` gains a mechanical quotation check.**
+  A quotation is the only part of a concept that cannot be judged by reading it — a stale claim looks
+  stale, a misquotation looks perfect forever.
+  - The useful half is the **normalisation that must precede the check**: page furniture, hyphenation
+    across a line break, blockquote markers and emphasis inside the quoted span all produce *false
+    negatives*, while rendered-versus-raw link text is a *real fault*. Treating one as the other
+    corrupts a correct quotation.
+  - Plus the trap specific to re-verification: a note about a claim you just revised invites quoting
+    your own wording into the styling that means *the source wrote this*.
+
+Marketplace `version` 0.1.24 → 0.1.25.
+
 ## [0.1.24]
 
 ### Changed
