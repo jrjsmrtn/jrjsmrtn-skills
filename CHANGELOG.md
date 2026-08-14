@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.24]
+
+### Changed
+
+- Refreshed `okf-skills` to `7ffe590` (v0.1.8): **one rule, from four instances of the same failure
+  in a single week.** `okf-bundle` now states that no gate compares an `index.md`'s claims to the
+  corpus it indexes — an index that only links onward cannot drift, but one that characterises the
+  collection holds a second copy of facts living in the concept files.
+  - The instance worth the section: correcting a count to a *named exception* is the right instinct,
+    and *"every concept but one is verified"* was still wrong on arrival, because the commit that
+    wrote it added the second unverified file. **A named exception is robust against later change
+    and not against the change introducing it.**
+  - The guidance is to **describe the kind of evidence rather than quantify it** — a distribution
+    stays true when a concept is added; a tally does not.
+  - `okf-verify` gains a matching step: re-read `index.md` and any `landscape.md` before tagging,
+    because a verification pass edits concepts and the index is not what you are editing.
+
+Marketplace `version` 0.1.23 → 0.1.24.
+
 ## [0.1.23]
 
 ### Changed
