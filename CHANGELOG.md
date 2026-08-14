@@ -7,9 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.23]
+
+### Changed
+
+- Refreshed `okf-skills` to `e123b80` (v0.1.7): **two gaps filled that were absent rather than
+  wrong**, found by auditing three bundles built in one week against what the skills already said.
+  - `okf-bundle` gains the **type vocabulary**, which it had not mentioned at all. OKF requires
+    `type` and constrains no value — `type: Bananas` passes `okf validate` and `okf lint` with zero
+    findings, run against a throwaway bundle and confirmed live by removing the field, which fails.
+    The section is about checking the vocabulary in **both directions**, including the case a
+    one-directional check cannot see: a type stranded when its only concept moves to another bundle.
+  - `okf-verify` gains the outcome **between verified and unchecked** — a source that loads, is the
+    right document, and does not support the claim. Absent `verified` conflates *never checked* with
+    *checked and unsupported*, and only the second tells the next reader not to repeat the lookup.
+  - Carries the heuristic behind it: **project documentation describes purpose, not failure modes**,
+    so a tool's own page is nearly silent on what goes wrong with it.
+- **The marketplace description named four subjects while six plugins shipped.** `okf-skills` and
+  `structured-data-skills` had been added without it being updated, so the public listing understated
+  what is here. Both are now named.
+
 ### Added
 
 - Community health files: `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `LICENSE` (MIT).
+
+Marketplace `version` 0.1.22 → 0.1.23.
 
 ## [0.1.22]
 
