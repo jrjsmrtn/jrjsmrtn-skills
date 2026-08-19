@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.28]
+
+### Changed
+
+- Refreshed `structured-data-skills` to `66e90cd` (v0.1.6): **choose the artifact before the tool.**
+  `process-structured-data` gains *A rendered document is not the document* — when something is
+  published in several formats, one is usually canonical and the rest are renderings, and parsing a
+  rendering means reverse-engineering layout that was never content. IETF RFCs are the worked case,
+  with the exact boundary (RFC 8650 is the first with `.xml`) probed rather than recalled.
+  - The transferable half: **check status before you quote.** A verbatim quotation from a superseded
+    document passes every string check, because the text really does say that — `rfc-index.xml`
+    reports RFC 2616 as obsoleted by RFC7230..RFC7235. Any corpus of citations wants a status check
+    beside its text check.
+  - `extract-document-text` gains a four-rung fetch ladder ending in Playwright, for content that
+    does not exist until JavaScript runs — with the rule that a browser produces evidence needing its
+    version recorded.
+
 ## [0.1.27]
 
 ### Changed
