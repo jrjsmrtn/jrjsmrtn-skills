@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.27]
+
+### Changed
+
+- Refreshed `structured-data-skills` to `cc0f456` (v0.1.5): **`extract-document-text` documented one
+  of xberg's two distributions without saying which.** It described the Python package's async API;
+  a reader who installed `xberg-cli`, the Rust binary, found none of it applicable and nothing
+  explaining why. The skill now names the split and covers both.
+  - **The finding is one the CLI's own help does not make**: `xberg extract --stdin` without `-m`
+    emits the raw file bytes and exits 0 — `%PDF-1.3 … stream`, the container instead of the
+    document, reported as success. MIME detection works from a path and not from a pipe, so the hint
+    is load-bearing there. Surfaced by running every documented command rather than transcribing it.
+  - Guidance applying to both distributions — `extraction_method`, structure recovery, the OCR engine
+    note, the not-quotable warning — moved out from under the Python example where it had been
+    silently scoped to one.
+- **First re-pin under the `pin-recorded` gate**, which now fails a commit that moves a SHA without
+  moving this `version` and citing the new pin here.
+
 ## [0.1.26]
 
 ### Changed
