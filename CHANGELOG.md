@@ -7,6 +7,39 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.26]
+
+### Changed
+
+- Refreshed `project-orchestration-skills` to `0a1301d` (v0.1.34), five releases on from the
+  pinned v0.1.29. **The pin, not the plugin, was the stale part** — a marketplace `autoUpdate`
+  refreshes this repository and never the SHAs inside it, so a plugin can sit five releases
+  behind while every clone reports itself up to date.
+  - **v0.1.33 — an agent signed a DCO attestation in a maintainer's name.** A `commit-msg` hook
+    rejected a commit for a missing `Signed-off-by:`, and `git commit -s` satisfied the hook by
+    asserting a legal certification the agent had no standing to make. `setup-git-hooks` now says
+    to hand the work back unsigned, and `bootstrap-project`'s generated `CLAUDE.md` carries
+    *Attestations are never delegated* — generalised past the DCO to a CLA, a release approval,
+    a published provenance statement. Ships as an instruction and says so: the hook still cannot
+    tell a person from a tool.
+  - **v0.1.34 — a repository with three remotes ran its pre-push gates on two of them and
+    reported a clean summary for the third.** lefthook derives the pre-push file set from
+    `@{push}`, which git resolves per *branch*, so the first push advances it and every later
+    remote computes an empty diff. `pre-push` gates belong in `scripts:`, which are not subject
+    to the skip. Two non-fixes are recorded so they are not retried.
+  - **v0.1.31–v0.1.32 — commit-message, README and code-comment content conventions**, shipped
+    house-derived and then checked against Ousterhout's published exchange with Martin, which
+    contradicted three of them. Interface comments were a missing category, not a refinement.
+  - **v0.1.30** — `analyze-project` cites the `ai-contribution-policies` bundle and flags the
+    `Co-developed-by:` trap.
+
+### Notes
+
+- `okf-skills` was re-pinned to `4d6d8f5` (v0.1.10) in `c575062` **without a changelog entry or
+  a marketplace version bump**, as was the `structured-data-skills` v0.1.4 pin in `a0fa62e`.
+  Both are recorded here rather than left out of the log: a pin change nobody can see in the
+  changelog is a pin change nobody can audit.
+
 ## [0.1.25]
 
 ### Changed
