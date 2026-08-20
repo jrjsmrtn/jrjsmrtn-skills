@@ -7,6 +7,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.29]
+
+**okf-skills re-pinned to `7b7d871` (v0.1.10 → v0.1.11).**
+
+Adds four faults found by a verification pass over six OKF bundles, none of which the skills already
+covered:
+
+- **Mistrims run in one direction** — every mistrimmed quotation in that corpus ended where the
+  surrounding *argument* wanted the sentence to end, which makes it the argument leaking into the
+  evidence rather than transcription noise, and explains why re-reading never catches it.
+- **A figure from a page that recomputes should not be quoted** — one statistics page recalculated
+  weekly *and* rendered amounts in the viewer's currency, giving two different numbers for the same
+  period. Report with a read-on date instead.
+- **Three concept anti-patterns** — a number in prose that a gate already counts, a verification note
+  that outlives its evidence, and a comparison table captioned only at the foot of the page.
+- **Bundles whose sources cannot be followed must say so in the index** — a corpus citing reserved
+  documentation hosts is unverifiable by construction, which is invisible from inside it.
+
+Notably *not* added: mechanical quotation checking, drafting from the downloaded source, and not
+quoting your own claim in a re-verification note. All three were already in the skills, with better
+evidence than the pass produced.
+
+
 ## [0.1.28]
 
 ### Changed
