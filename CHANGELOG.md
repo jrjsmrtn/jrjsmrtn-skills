@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.30]
+
+**Two pins moved: okf-skills `cb43318` (v0.1.11 → v0.1.12) and structured-data-skills `a357df9`
+(v0.1.6 → v0.1.7).**
+
+- **okf-skills 0.1.12 restores the version lockstep.** 0.1.11 shipped with `metadata.version`
+  `"0.1.10"` in all three `SKILL.md` files while `plugin.json` read `0.1.11`, so the `v0.1.11` tag
+  records a plugin that contradicts itself about its own version. No skill content changed.
+- **structured-data-skills 0.1.7 — *When the metadata lives in the prose*.** The case where a
+  document has no separate metadata at all: an Architecture Decision Record keeps its number in the
+  filename *and* the `# N.` heading, its status as a word in a section that also holds prose. `mq`
+  addresses those by structure through its `section` module. The status case is measured — a trailing
+  period parses as `Proposed`, and a hard wrap that puts `superseded` at the start of a line parses
+  as `Superseded`, so **a line break changes a record's status and nothing reports it**. Also records
+  that `to_text()` and `to_string()` are not interchangeable, which is how the rule was found.
+
 ## [0.1.29]
 
 **okf-skills re-pinned to `7b7d871` (v0.1.10 → v0.1.11).**
