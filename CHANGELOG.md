@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.31]
+
+**One pin moved: okf-skills `3fe5a48` (v0.1.12 → v0.1.13).**
+
+- **okf-skills 0.1.13 widens what its guidance calls a summary.** A corpus audited on 2026-08-26
+  carried **nineteen false or superseded summary claims** while its own conventions said *re-read the
+  index* — **the rule was written, and it named one file of six.**
+
+  `okf-bundle` had three observed failures on this and **all three were tallies**, so a reader would
+  search for numbers; **most of the nineteen were not counts** but claims a concept had already
+  corrected in its own body. It now names the six kinds of file that hold a summary, adds the
+  diagnostic that nineteen of nineteen shared — *when a concept records it was wrong about something,
+  search the corpus for the thing it was wrong about* — and records the two gates measured and
+  refused, one of them at **249 candidate occurrences**.
+
+  `okf-verify`'s release step named two files and now names six. `okf-concept` gains a subsection on
+  the `description:` field, where **five of fifty** asserted what their own body denied.
+
+- ⚠ **Checked before pinning, per the convention**: `3fe5a48863b78395e7bad84b4282aedaeb488ef7` is on
+  `github` at both `refs/heads/main` and `refs/tags/v0.1.13^{}`. **A pin resolving to nothing installs
+  nothing and the marketplace cannot report it.**
+
 ## [0.1.30]
 
 **Two pins moved: okf-skills `cb43318` (v0.1.11 → v0.1.12) and structured-data-skills `a357df9`
