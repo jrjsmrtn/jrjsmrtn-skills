@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.32]
+
+**One pin moved: okf-skills `53c734e` (v0.1.13 → v0.1.14).**
+
+- **okf-skills 0.1.14 treats a proposal's state as more than *open*.** A record verified a proposal
+  as *"still open and unmerged"*; it already carried **two approving reviews**, and **thirteen
+  comments** landed after the stamp while it sat inside its expiry window.
+
+  `okf-verify` gains *When the source is a decision still being made* — what to read (reviews, the
+  current diff, comments since, commits) and a check asking the forge whether a cited pull request
+  moved since the last verification. It exits 1 on movement, 0 when quiet, and **2 when the forge
+  cannot be read**, because its first draft exited 1 on a network failure and would have reported
+  movement that never happened. `okf-concept` Step 5 points to it. The plugin's `CLAUDE.md` also
+  stops stating a script location that had been wrong for a month.
+
+- ⚠ **Checked before pinning, per the convention**: `53c734e72af29146b715a1f20d0bf221bc1a3aea` is on
+  `github` at `refs/heads/main`, verified by `git ls-remote`. **Unlike the previous pin there is no
+  `v0.1.14` tag yet** — release tags on okf-skills are signed, and signing one is left to the
+  maintainer. The pin resolves by SHA and does not need it.
+
 ### Fixed
 
 - **The `gitleaks` gate failed open.** When `gitleaks` was not on `PATH` the hook printed
