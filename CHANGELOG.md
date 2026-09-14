@@ -26,6 +26,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `github` at `refs/heads/main`, verified by `git ls-remote`. **Unlike the previous pin there is no
   `v0.1.14` tag yet** — release tags on okf-skills are signed, and signing one is left to the
   maintainer. The pin resolves by SHA and does not need it.
+- **2026-09-14, after publication:** the maintainer signed and pushed `v0.1.14`. `git ls-remote`
+  shows `refs/tags/v0.1.14^{}` at `53c734e` on both `origin` and `github`, matching the pin.
 
 ### Fixed
 
