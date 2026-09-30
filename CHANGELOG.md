@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.33]
+
+**Two pins moved: c4-skills `e86d8a9` (v0.1.8 → v0.1.9) and project-orchestration-skills
+`65bb3f4` (v0.1.34 → v0.1.35).**
+
+- **Structurizr runs with the most native OCI runtime, on a pinned image.** The C4 skills and
+  `setup-architecture-as-code` used podman and an unpinned `structurizr/structurizr`. They now
+  run the most native runtime available (Apple `container` on Apple Silicon macOS, `wslc` on
+  Windows where available, else podman) on `structurizr/structurizr:2026.09.19`. The pin is
+  not cosmetic: `latest` moved from 2026.03.06 to 2026.09.19 and began rejecting a
+  dynamic-view step with no model relationship behind it. The Makefile snippet was run as
+  shipped against a real workspace: it picked Apple `container` and validated.
+
+- Both releases also carry the fail-closed gitleaks gate that was unreleased in each.
+
+- ⚠ **Checked before pinning, per the convention**: both SHAs are on `github` at
+  `refs/heads/main`, verified by `git ls-remote`, and both carry signed tags (`v0.1.9`,
+  `v0.1.35`) that verify.
+
 ## [0.1.32]
 
 **One pin moved: okf-skills `53c734e` (v0.1.13 → v0.1.14).**

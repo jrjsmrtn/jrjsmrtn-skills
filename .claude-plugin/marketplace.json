@@ -1,7 +1,7 @@
 {
   "name": "jrjsmrtn-skills",
   "description": "Georges Martin's Claude Code skill plugins: AI-assisted project orchestration, C4 architecture modelling, Di\u00e1taxis documentation, Open Knowledge Format bundles, structured-data tooling, and Obsidian vault interaction.",
-  "version": "0.1.32",
+  "version": "0.1.33",
   "owner": {
     "name": "Georges Martin",
     "email": "jrjsmrtn@gmail.com"
@@ -13,7 +13,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/jrjsmrtn/c4-skills.git",
-        "sha": "dd4775540102c73a4790b4f0f9d50617cb097e95"
+        "sha": "e86d8a91d3ed793cdf6c035f01d19f1b18cc8b6b"
       },
       "homepage": "https://github.com/jrjsmrtn/c4-skills"
     },
@@ -43,7 +43,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/jrjsmrtn/project-orchestration-skills.git",
-        "sha": "0a1301d0ef24afc90426832d39186d42334fe689"
+        "sha": "65bb3f42c9a61bd7ad0fec145ab6b9a1a5afc04b"
       },
       "homepage": "https://github.com/jrjsmrtn/project-orchestration-skills"
     },
