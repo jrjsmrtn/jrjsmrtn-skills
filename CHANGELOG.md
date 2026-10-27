@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.34]
+
+**One pin moved: okf-skills `b60eadd` (v0.1.14 → v0.1.15).**
+
+- **okf-skills 0.1.15 stops telling readers `okf` misses two things it now catches.** Its coverage
+  claims were pinned to `okf` v0.2.1; re-measured against v0.5.0 (fixtures, one per fault plus a clean
+  control), a footnote cited but never defined and one defined but never cited are both reported
+  (`okf/sources/footnote-undefined`, `okf/sources/footnote-unreferenced`), so the local Python check is
+  removed. **`okf` reports them at WARN and exits 0**, so `okf-concept` now says to gate on the
+  findings, not the exit code. Only `verified` without `sources` remains unchecked upstream. Also
+  documents the entry formats `okf` enforces (`sources[].resource`; `verified[].by` / `.at`).
+
+- ⚠ **Checked before pinning, per the convention**: `b60eaddc800857fe6a8ed77d5c2fd41c03bd6a14` is on `github` at
+  `refs/heads/main`, verified by `git ls-remote`. **There is no `v0.1.15` tag yet** — release tags on
+  okf-skills are signed, and signing one is left to the maintainer. The pin resolves by SHA and does not
+  need it.
+
 ## [0.1.33]
 
 **Two pins moved: c4-skills `e86d8a9` (v0.1.8 → v0.1.9) and project-orchestration-skills
