@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.35]
+
+**One pin moved: project-orchestration-skills `5abd00e` (v0.1.35 → v0.1.36).**
+
+- **`analyze-project` drops the unsourced SPARK "alternative interpretation".** The skill offered
+  Situation, Proposal, Agreement, Resources, Kickers as a variant "some practitioners use", with no
+  source; a search on 2026-11-03 found none, and none of the skill's templates, validation or role
+  table followed it. SPARK is now described only as Stakeholders, Problem, Analysis, Risks,
+  Knowledge.
+
+- ⚠ **Checked before pinning, per the convention**: `5abd00e` is on `github` at `refs/heads/main`
+  and is what `v0.1.36^{}` resolves to there, verified by `git ls-remote`; the signed tag
+  `v0.1.36` verifies.
+
 ## [0.1.34]
 
 **One pin moved: okf-skills `b60eadd` (v0.1.14 → v0.1.15).**
