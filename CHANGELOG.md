@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.42]
+
+**One pin moved: project-orchestration-skills `cf3083e` (v0.1.45 → v0.1.46).**
+
+- **0.1.46: the check scripts are files, not text in `SKILL.md`.** Ten scripts (`check-bootstrap.sh`, `check-adrs.sh`,
+  `check-containerfile.sh`, `check-gitlab-pins.sh`, `check-hygiene.sh`, `check-action-pins.sh`, `check-dco.sh`,
+  `check-tool-pins.sh`, `validate-quality-config.sh`, `check-derisk.sh`) now live under `skills/<name>/scripts/`, as the
+  Agent Skills specification places executable code, and each `SKILL.md` links its script and says to copy it into
+  the project. Seven are byte-identical to the text they replace; three had their `# scripts/…` comment above the
+  shebang, which is now line 1. The scripts are formatted with `shfmt -i 2 -ci -bn`. No check changed behaviour:
+  the five with test suites pass them, and five have none. Not run in CI or as a hook.
+
+- ⚠ **Checked before pinning, per the convention**: `cf3083e` is on `github` at `refs/heads/main` and is what
+  `v0.1.46^{}` resolves to there, verified by `git ls-remote`; the tag resolves to the same commit on both
+  remotes, and `git tag -v` reports a good signature.
+
 ## [0.1.41]
 
 **One pin moved: project-orchestration-skills `19b815e` (v0.1.44 → v0.1.45).**
