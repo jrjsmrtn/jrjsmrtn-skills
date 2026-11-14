@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.40]
+
+**One pin moved: okf-skills `d2223f1` (v0.1.15 → v0.1.17).**
+
+- **0.1.16: new skill `okf-quality`.** The gates for a bundle repository: a table of what `okf` does and
+  does not fail on (footnote faults, a dead link in a concept body and an expired `stale_after` are all
+  `WARN`, exit 0), three per-commit gates and a scheduled expiry sweep, and a self-test that plants one
+  fault of each kind. It needs `okf` and `yq`, and fails closed without either. `okf-verify` now runs
+  these gates for its pre-tag `verified`-without-`sources` and release-map checks instead of carrying its
+  own copy, which drops the `python3` + `pyyaml` dependency for that one check; two other `okf-verify`
+  scripts still need it. `okf-bundle` and `okf-concept` are corrected to say `okf validate` exits 0 on
+  most of what it finds.
+- **0.1.17: documentation only.** The OKF specification, `yq` and `mq` are linked where the skills name
+  them. No gate, script or rule changed.
+
+- ⚠ **Checked before pinning, per the convention**: `d2223f1` is on `github` at `refs/heads/main`,
+  verified by `git ls-remote`. ⚠ **It is not tagged**: `v0.1.15` is the latest tag in `okf-skills`, and
+  neither 0.1.16 nor 0.1.17 was ever tagged, so there is no signed tag to verify and no `^{}` to
+  resolve. The pin is a SHA and does not need one, but the usual tag check could not be run.
+
 ## [0.1.39]
 
 **One pin moved: project-orchestration-skills `3731d7f` (v0.1.42 → v0.1.44).**
