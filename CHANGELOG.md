@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.43]
+
+**One pin moved: project-orchestration-skills `e2fd6dc` (v0.1.46 → v0.1.47).**
+
+- **0.1.47: `check-action-pins.sh` resolves a pin's comment as a tag.** It had asked `commits/<comment>`, which answers
+  for any ref, so a comment that repeated the pinned SHA, or named a branch, resolved to itself and passed. It now
+  asks `git/ref/tags/<tag>`, follows an annotated tag to its commit, and fails a comment that is a SHA, is not a
+  valid tag name, or is not a tag in that repository. The skill shows the same lookup. A new suite of 31 cases
+  runs against a stubbed `gh`; the old script fails 21 of them. Run on real workflows, it found a pin commented
+  `# v4` for an action whose `v4` is a branch. Found by an automated security review of 0.1.46. Not run in CI or
+  as a hook.
+
+- ⚠ **Checked before pinning, per the convention**: `e2fd6dc` is on `github` at `refs/heads/main` and is what
+  `v0.1.47^{}` resolves to there, verified by `git ls-remote`; the tag resolves to the same commit on both
+  remotes, and `git tag -v` reports a good signature.
+
 ## [0.1.42]
 
 **One pin moved: project-orchestration-skills `cf3083e` (v0.1.45 → v0.1.46).**
