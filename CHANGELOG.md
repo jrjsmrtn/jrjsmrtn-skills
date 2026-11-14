@@ -23,9 +23,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   them. No gate, script or rule changed.
 
 - ⚠ **Checked before pinning, per the convention**: `d2223f1` is on `github` at `refs/heads/main`,
-  verified by `git ls-remote`. ⚠ **It is not tagged**: `v0.1.15` is the latest tag in `okf-skills`, and
-  neither 0.1.16 nor 0.1.17 was ever tagged, so there is no signed tag to verify and no `^{}` to
-  resolve. The pin is a SHA and does not need one, but the usual tag check could not be run.
+  verified by `git ls-remote`. ⚠ **It was not tagged when pinned**: `v0.1.15` was the latest tag in
+  `okf-skills`, and neither 0.1.16 nor 0.1.17 had been tagged, so the usual tag check could not be run
+  then. **Tagged afterwards, 2026-11-14**: the signed `v0.1.17` resolves to `d2223f1` on both remotes,
+  verified by `git ls-remote`, and `git tag -v` reports a good signature. `v0.1.16` is still untagged.
 
 ## [0.1.39]
 
