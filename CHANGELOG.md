@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.44]
+
+**One pin moved: project-orchestration-skills `08b29a6` (v0.1.47 → v0.1.48).**
+
+- **0.1.48: the check scripts pass `shellcheck` with no finding.** Twenty findings in five of the ten scripts are
+  cleared: a variable nothing read, a space-separated list that was split by leaving it unquoted, `ls | head -1`,
+  and five `A && B || C` chains that could run the `||` branch when the `&&` one failed. Three unquoted lists of file
+  names stay unquoted on purpose, each with a `# shellcheck disable` and its reason. Every suite passes, a new suite
+  covers `check-tool-pins.sh` (16 cases), and four of the scripts give the same output and exit code as before on
+  fifteen real projects. No check changed behaviour. Not run in CI or as a hook.
+
+- ⚠ **Checked before pinning, per the convention**: `08b29a6` is on `github` at `refs/heads/main` and is what
+  `v0.1.48^{}` resolves to there, verified by `git ls-remote`; the tag resolves to the same commit on both
+  remotes, and `git tag -v` reports a good signature.
+
 ## [0.1.43]
 
 **One pin moved: project-orchestration-skills `e2fd6dc` (v0.1.46 → v0.1.47).**
