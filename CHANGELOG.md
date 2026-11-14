@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.38]
+
+**One pin moved: project-orchestration-skills `5498b69` (v0.1.40 → v0.1.42).**
+
+- **0.1.41: `bootstrap-project` Validation is `check-bootstrap.sh`.** The tier-by-tier list (conventional
+  commit, tier statement, `.gitignore` secret patterns, `main`/`develop`, ADRs, README, hooks installed,
+  the `docs/` tree, Public-profile `SECURITY.md`, `dependabot.yml`) is a script. It states what it does
+  not check: that hooks pass, that `workspace.dsl` validates, and the quality of the Scope.
+- **0.1.42: `setup-adrs` Validation is `check-adrs.sh`.** File names, the adr-tools heading, real and
+  not-future dates, Status, required sections, leftover placeholders, numbering, the ADR-0003 and
+  ADR-0004 rules, and that `index.yml` agrees with the ADRs. It runs under the bash 3.2 macOS ships.
+  Both scripts were run against real projects, and neither has run in CI.
+
+- ⚠ **Checked before pinning, per the convention**: `5498b69` is on `github` at `refs/heads/main` and is
+  what `v0.1.42^{}` resolves to there, verified by `git ls-remote`; `v0.1.41` resolves to `8f0580e` on
+  both remotes; both signed tags verify with `git tag -v`.
+
 ## [0.1.37]
 
 **One pin moved: project-orchestration-skills `e7bb3fa` (v0.1.39 → v0.1.40).**
