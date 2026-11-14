@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.39]
+
+**One pin moved: project-orchestration-skills `3731d7f` (v0.1.42 → v0.1.44).**
+
+- **0.1.43: `setup-git-hooks` ships `check-hygiene.sh`.** Fails on a `.gitignore` missing a secret-file
+  pattern or ignoring `.env.example`; on a manifest with no *committed* lockfile, including one that exists
+  but is git-ignored; and on an unfrozen install in CI files and Containerfiles (`uv sync`, `npm install`,
+  `cargo build`, `mix deps.get`) or a `COPY mix.lock*` glob. The lockfile rule is stricter than the old
+  prose: no committed lock fails whatever the constraints say.
+- **0.1.44: `setup-container-security` ships `check-containerfile.sh`.** Fails on a `FROM` with no digest
+  (a `${VARIABLE}` base is expanded from its global `ARG` default first), a final stage that is not non-root,
+  `curl | sh`, a download with no checksum or signature check, and `apt-get install` without
+  `--no-install-recommends`; and per repository on a missing ignore file, `hadolint`, `.grype.yaml`, `grype`
+  in CI, or a `docker` Dependabot ecosystem. Exceptions are declared in the file, not by switching a check off.
+  Both scripts were run against real projects, and neither has run in CI or as a hook.
+
+- ⚠ **Checked before pinning, per the convention**: `3731d7f` is on `github` at `refs/heads/main` and is
+  what `v0.1.44^{}` resolves to there, verified by `git ls-remote`; `v0.1.43` resolves to `6305a09` on both
+  remotes; both signed tags verify with `git tag -v`.
+
 ## [0.1.38]
 
 **One pin moved: project-orchestration-skills `5498b69` (v0.1.40 → v0.1.42).**
