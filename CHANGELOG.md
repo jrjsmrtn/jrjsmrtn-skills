@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.36]
+
+**One pin moved: project-orchestration-skills `f2b6c07` (v0.1.36 → v0.1.39).**
+
+- **0.1.37**: `setup-git-hooks` requires a gate whose tool is missing to fail (`need.sh`) and adds a
+  pinned-tool runner (local binary only at the exact pin, else podman, else docker, else fail);
+  `validate-quality-config` gains a tool-pin check (`check-tool-pins.sh`).
+- **0.1.38**: `harden-github-actions` corrects the `# vX` comment guidance (Dependabot keeps the old
+  comment across majors) and adds `check-action-pins.sh` and a DCO check (`check-dco.sh`);
+  `setup-git-hooks` rejects a `commit-msg` DCO gate.
+- **0.1.39**: `plan-sprint` gains a de-risk step (`check-derisk.sh`, shape-only);
+  `harden-github-actions` documents the `--require-hashes` lockfile requirement.
+
+- ⚠ **Checked before pinning, per the convention**: `f2b6c07` is on `github` at `refs/heads/main`,
+  and is what `v0.1.39^{}` resolves to there, verified by `git ls-remote`. The signed tags
+  `v0.1.37`–`v0.1.39` resolve to `875fd58`, `cb18da5` and `f2b6c07` on both remotes, and all three
+  verify with `git tag -v`.
+
 ## [0.1.35]
 
 **One pin moved: project-orchestration-skills `5abd00e` (v0.1.35 → v0.1.36).**
