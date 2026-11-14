@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.41]
+
+**One pin moved: project-orchestration-skills `19b815e` (v0.1.44 → v0.1.45).**
+
+- **0.1.45: `bootstrap-project`'s `check-bootstrap.sh` enforces the README rules.** At t1 it fails a README
+  `Status` that quotes a count or states neither a date nor a link, and an "N of M complete" claim. When
+  `pyproject.toml`, `Cargo.toml` or `package.json` has a `description`, it must be at most 120 characters and
+  appear in the README verbatim (line wraps, link markup and a trailing full stop tolerated). The plugin now
+  carries its fault-injection suites under `tests/`; the script has not run in CI or as a hook.
+
+- ⚠ **Checked before pinning, per the convention**: `19b815e` is on `github` at `refs/heads/main` and is what
+  `v0.1.45^{}` resolves to there, verified by `git ls-remote`; the tag resolves to the same commit on both
+  remotes, and `git tag -v` reports a good signature.
+
 ## [0.1.40]
 
 **One pin moved: okf-skills `d2223f1` (v0.1.15 → v0.1.17).**
