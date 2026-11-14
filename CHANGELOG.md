@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.37]
+
+**One pin moved: project-orchestration-skills `e7bb3fa` (v0.1.39 → v0.1.40).**
+
+- **`harden-gitlab-ci` gains `check-gitlab-pins.sh`.** The GitLab sibling had no pin check, where
+  `harden-github-actions` has one. The script reads the YAML with `yq` and fails on an unpinned
+  `include: component` / `project` / `remote` and on any `image:` or `services:` without an `@sha256`
+  digest; it exits 2 when it cannot run, or extracts nothing from a file that mentions includes or
+  images. Run against seven real configurations; not yet against one that uses `include:`, nor as a
+  GitLab CI job.
+
+- ⚠ **Checked before pinning, per the convention**: `e7bb3fa` is on `github` at `refs/heads/main`
+  and is what `v0.1.40^{}` resolves to there, verified by `git ls-remote`; the signed tag `v0.1.40`
+  verifies with `git tag -v`.
+
 ## [0.1.36]
 
 **One pin moved: project-orchestration-skills `f2b6c07` (v0.1.36 → v0.1.39).**
