@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.45]
+
+**One pin moved: project-orchestration-skills `c3bb643` (v0.1.48 → v0.1.49).**
+
+- **0.1.49: `setup-adrs` prompts for the third-party licensing record on internal projects too.** The
+  `LICENSING.md` and copyleft-floor guidance was scoped to publicly distributed projects, so an internal-only
+  project was never asked. The scope sentence and the checklist item now cover any project that vendors, bundles
+  or static-links third-party code or ships a container or WASM image, and a new paragraph tells a proprietary or
+  internal project to record its distribution mode and where "internal" ends. Wording only; no script changed. The
+  release also carries the earlier unreleased fix that keeps the test suites out of the directory they were
+  started from.
+
+- ⚠ **Checked before pinning, per the convention**: `c3bb643` is at `refs/heads/main` on both `origin` and
+  `github`, verified by `git ls-remote`. **No `v0.1.49` tag exists yet**, unlike the previous pin, so the pin
+  resolves by SHA only.
+
 ## [0.1.44]
 
 **One pin moved: project-orchestration-skills `08b29a6` (v0.1.47 → v0.1.48).**
