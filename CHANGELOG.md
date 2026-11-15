@@ -20,8 +20,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   started from.
 
 - ⚠ **Checked before pinning, per the convention**: `c3bb643` is at `refs/heads/main` on both `origin` and
-  `github`, verified by `git ls-remote`. **No `v0.1.49` tag exists yet**, unlike the previous pin, so the pin
-  resolves by SHA only.
+  `github` and is what `v0.1.49^{}` resolves to on both, verified by `git ls-remote`; `git tag -v` reports a good
+  signature.
 
 ## [0.1.44]
 
