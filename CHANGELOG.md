@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.46]
+
+**One pin moved: structured-data-skills `04e7cd6` (v0.1.7 → v0.1.8).**
+
+- **0.1.8: `process-structured-data` covers linting Markdown with `rumdl`.** `mq` reads what a document says;
+  `rumdl` checks how it is written. The new section says to gate on `rumdl check` and not on `rumdl fmt`, which
+  exits 0 with violations left. It records how to migrate off markdownlint (prove the config took effect with a
+  planted rule, then diff both linters' findings) and two measured differences: `MD024` only flags same-parent
+  duplicates in rumdl, and `MD057` checks relative-link targets per linking file. `rumdl fmt` changed the
+  rendered HTML of 2 files in a 28-file tree, so the skill says to run it as its own commit. The release also
+  carries the fix that makes the `gitleaks` hook fail closed. The marketplace description follows the plugin's
+  ("Query, safely edit and lint …").
+
+- ⚠ **Checked before pinning, per the convention**: `04e7cd6` is at `refs/heads/main` on both `origin` and
+  `github` and is what `v0.1.8^{}` resolves to on both, verified by `git ls-remote`; `git tag -v` reports a good
+  signature.
+
 ## [0.1.45]
 
 **One pin moved: project-orchestration-skills `c3bb643` (v0.1.48 → v0.1.49).**
